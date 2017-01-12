@@ -19,7 +19,12 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
 					<div class="page-header"><h1>Welcome to the GitHub Stars App</h1></div>
+					<button id="import_button" type="submit" class="btn btn-default" onclick="window.location.href='php/import.php'">Import Data</button>
 					<button id="display_button" type="submit" class="btn btn-default" onclick="displaytable();">Display Data</button>
+					<div id="goback_container" class="hidden">
+						<button id="goback_button" type="submit" class="btn btn-default" onclick="window.location.href='http://dev.bhdeveloper.com/gitstars'">Go Back</button>
+						<hr class="featurette-divider">
+					</div>
 				</div>
 			</div>
 			<div id="table_row" class="row" style="display:none">
@@ -93,7 +98,9 @@
 			});
 			
 			function displaytable(){
+				$("#import_button").addClass("hidden");
 				$("#display_button").addClass("hidden");
+				$("#goback_container").removeClass("hidden");
 				$("#table_row").fadeIn("slow");
 				var table = $('#repos_table').DataTable();
 				table.responsive.recalc();
