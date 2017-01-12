@@ -61,7 +61,7 @@
 									
 									echo '<tr><td class="control"></td>
 											<td>
-												<a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" data-content="<b>ID:</b> '.$id.'<br><b>Name:</b> '.htmlspecialchars($name).'<br><b>URL:</b> '.$url.'<br><b>Create Date:</b> '.$createdt.'<br><b>Push Date:</b> '.$pushdt.'<br><b>Description:</b> '.htmlspecialchars($description).'<br><b>Stars:</b> '.$stars.'">'.$id_trunc.'</a>
+												<a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" data-content="<b>ID:</b> '.$id.'<br><b>Name:</b> '.htmlspecialchars($name).'<br><b>URL:</b> <a href=\''.$url.'\' target=\'_blank\'>'.$url.'</a><br><b>Create Date:</b> '.$createdt.'<br><b>Push Date:</b> '.$pushdt.'<br><b>Description:</b> '.htmlspecialchars($description).'<br><b>Stars:</b> '.$stars.'">'.$id_trunc.'</a>
 											</td>
 											<td><a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" data-content="'.$name.'">'.$name_trunc.'</a></td>
 											<td><a href="javascript:void(0)" data-toggle="popover" data-trigger="focus" data-content="<a href=\''.$url.'\' target=\'_blank\'>'.$url.'</a>">'.$url_trunc.'</a></td>
