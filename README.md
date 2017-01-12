@@ -4,6 +4,6 @@ This is a project to grab the top starred GitHub projects using PHP (php/import.
 
 The visual part of this project (index.php) was created with Bootstrap. I used the DataTables library for the table design.
 
-You can find this project here: <a href="http://dev.bhdeveloper.com/gitstars/">BHammond Development Project</a>
+You can find this project here: <a href="http://dev.bhdeveloper.com/gitstars/" target="_blank">BHammond Development Project</a>
 
 Thanks for taking a look. Have fun and let me know if you can think of any improvements or changes.
